@@ -1,0 +1,339 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(4, 4, 47);
+    min-height: 100vh;
+}
+
+.interface{
+    max-width: 1270px;
+    margin: 0px auto;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.btn-contato button{
+    margin: 20px;
+    padding: 5px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #b4672d;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 45px;
+    right: 60px;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    align-items: center; 
+}
+
+h2.titulo span{
+    color: #b4672d;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #b4682d;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container img {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.align-right{
+    text-align: right;
+}
+
+
+
+/* ESTILO DO TOPO DO SITE*/
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #b4672d;
+    font-size: 84px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    margin-left: 40px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*ESTILO SOBRE NOS*/
+section.Sobrenós{
+    padding: 80px 4%;
+}
+
+section.Sobrenós .flex{
+    gap: 60px;
+}
+
+.interface .sobrenos-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.interface .sobrenos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff79;
+}
+
+.interface .sobrenos-box i{
+    font-size: 70px;
+    color: #b4672d;
+}
+
+.interface .sobrenos-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.interface .sobrenos-box p{
+    font-size: 13px;
+    margin: 3px 0;
+}
+
+/*ESTILO DO SOBRE*/
+section.Sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.Sobre .txt-sobre{
+    color: #ffffff;
+}
+
+.Sobre .txt-sobre h2{
+   font-size: 50px; 
+   line-height: 40px;
+   margin-bottom: 30px;
+}
+
+.Sobre .txt-sobre h2 span{
+    color: #b4672d;
+    display: block;
+}
+
+.Sobre .txt-sobre P{
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #b4672d;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/*ESTILO DA ESTRUTURA*/
+section.Estrutura{
+padding: 80px 4%;
+box-shadow: 0 0 40px 10px #ffffff3f;
+}
+
+section.Estrutura .flex{
+    justify-content: space-around;
+    margin-top: 60px; 
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: background-position 5s ease-in-out;
+    cursor: pointer;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+/*estilo do formulario*/
+section.contato{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #253a779a;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #000524;
+    font-size: 18px;
+}
+
+form input::placeholder{
+    color: #000524;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #b4672d;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* estilo do rodape */
+
+.logo.footer{
+padding: 8px;
+width: 50px;
+}
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 20px 5px #ffffff3f;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #b4672d;
+}
+
+footer .line-footer p i{
+    color: #b4672d;
+    font-size: 30px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+
+
+
+
+
+ 
